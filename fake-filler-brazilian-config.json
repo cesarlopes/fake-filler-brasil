@@ -1,0 +1,138 @@
+{
+    "version": 1,
+    "agreeTermsFields": [
+        "agree",
+        "terms",
+        "conditions"
+    ],
+    "confirmFields": [
+        "confirm",
+        "reenter",
+        "retype",
+        "repeat",
+        "secondary"
+    ],
+    "defaultMaxLength": 20,
+    "enableContextMenu": true,
+    "fieldMatchSettings": {
+        "matchLabel": true,
+        "matchAriaLabel": true,
+        "matchAriaLabelledBy": true,
+        "matchId": true,
+        "matchName": true,
+        "matchClass": false,
+        "matchPlaceholder": false
+    },
+    "fields": [
+        {
+            "id": "cpf-field",
+            "type": "regex",
+            "name": "CPF",
+            "match": [
+                "cpf"
+            ],
+            "template": "\\d{3}\\.\\d{3}\\.\\d{3}-\\d{2}"
+        },
+        {
+            "id": "cep-field",
+            "type": "regex",
+            "name": "CEP",
+            "match": [
+                "cep"
+            ],
+            "template": "\\d{5}-\\d{3}"
+        },
+        {
+            "id": "telefone-field",
+            "type": "telephone",
+            "name": "Telefone",
+            "match": [
+                "telefone",
+                "phone"
+            ],
+            "template": "+55 (XX) XXXXX-XXXX"
+        },
+        {
+            "id": "nome-field",
+            "type": "first-name",
+            "name": "Primeiro Nome",
+            "match": [
+                "primeironome",
+                "firstname"
+            ]
+        },
+        {
+            "id": "sobrenome-field",
+            "type": "last-name",
+            "name": "Sobrenome",
+            "match": [
+                "sobrenome",
+                "lastname"
+            ]
+        },
+        {
+            "id": "endereco-field",
+            "type": "regex",
+            "name": "Endereço",
+            "match": [
+                "endereco",
+                "address"
+            ],
+            "template": "[Rua|Av.] Nome Aleatório, Número"
+        },
+        {
+            "id": "email-field",
+            "type": "email",
+            "name": "E-mail",
+            "match": [
+                "email"
+            ],
+            "emailPrefix": "",
+            "emailUsername": "random",
+            "emailUsernameList": [
+                "joao",
+                "maria",
+                "silva",
+                "santos"
+            ],
+            "emailHostname": "list",
+            "emailHostnameList": [
+                "gmail.com",
+                "hotmail.com",
+                "yahoo.com.br"
+            ]
+        },
+        {
+            "id": "cnpj-field",
+            "type": "regex",
+            "name": "CNPJ",
+            "match": [
+                "cnpj"
+            ],
+            "template": "\\d{2}\\.\\d{3}\\.\\d{3}/\\d{4}-\\d{2}"
+        },
+        {
+            "id": "bairro-field",
+            "type": "regex",
+            "name": "Bairro",
+            "match": [
+                "bairro",
+                "neighborhood"
+            ],
+            "template": "Bairro Aleatório"
+        }
+    ],
+    "ignoredFields": [
+        "captcha",
+        "hipinputtext"
+    ],
+    "ignoreFieldsWithContent": false,
+    "ignoreHiddenFields": true,
+    "passwordSettings": {
+        "mode": "defined",
+        "password": "Senha123!"
+    },
+    "ignoreDomains": [],
+    "profiles": [],
+    "triggerClickEvents": true
+}
